@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html
+<head>
+<meta charset="utf-8">
+<title>星辰于我-首页</title>
+<link rel="shortcut icon" href="all/img/favicon.ico" />
+<style>
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+ 
+/* 头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+ 
+.header h1 {
+  font-size: 50px;
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color:#333 ;
+}
+ 
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+/* 创建两列 */
+/* Left column */
+.leftcolumn {   
+  float: left;
+width: 75%;
+height:955px;
+}
+ 
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+/* 图像部分 */
+.fakeimg {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+}
+ 
+/* 文章卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+ 
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/*音乐*/
+audio{
+  width:100%;
+}
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}</style>
+</head>
+<body>
+<div class="header">
+  <h1>星辰于我-首页</h1>
+</div> 
+
+<div class="topnav">
+  <a href="home.html">首页</a>
+  <a href="#">作品</a>
+  <a href="#">教程</a>
+  <a href="article.html">文章</a>
+  <a href="#">论坛</a>
+  <a href="#" style="float:right">链接</a>
+</div>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <iframe src="home/轮播图/轮播图.html" width="100%" height="50%" frameborder="0"></iframe>
+     
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>星辰于我</h2>
+      <div class="fakeimg" style="height:100px;"><img src="all/img/touxiang.png" alt="头像" width="57%" >
+ </div>
+      <p>满怀希望就会所向披靡</p>                           
+</div>
+    <div class="card">
+      <h3>热门文章</h3>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+    </div>
+    <div class="card">
+      <h3>喜欢的歌</h3>
+      <p>孤勇者</p>
+      <audio controls>
+  <source src="music/孤勇者.mp3" type="audio/mp3" >
+</audio>    </div>
+  </div>
+</div>
+ 
+<div class="footer">
+  <h2>底部区域</h2>
+</div>
+ 
+</body>
+</html>
